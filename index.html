@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>Publicar gatitos que digan miau miau miau</title>
+</head>
+<body>
+    <h2 class="body__title">
+        Publica a tu gatito!
+    </h2>
+<div class="main__container">
+    <form class="publish__container">
+        <label for="name">Nombre de gatito</label>
+        <input type="text" name="name" id="name">
+        <label for="raza">Raza de gatito</label>
+        <select name="raza" id="race">
+            <option value="none">No aplica</option>
+            <option value="persian">Persa</option>
+            <option value="siamese">Siamés</option>
+            <option value="maine-coon">Maine Coon</option>
+            <option value="ragdoll">Ragdoll</option>
+            <option value="bengal">Bengala</option>
+            <option value="sphynx">Esfinge</option>
+            <option value="british-shorthair">Británico de Pelo Corto</option>
+            <option value="scottish-fold">Fold Escocés</option>
+            <option value="abyssinian">Abisinio</option>
+            <option value="birman">Birmano</option>
+        </select>
+        <label for="photo">Foto de gatito</label>
+        <div class="preview" title="Foto de gatito">
+            <img class="img__preview" src="#" alt="" id="img">
+        </div>
+
+        <input type="file" id="photo">
+
+        <button id="send">Enviar</button>
+        <p id="messages"></p>
+    </form>
+
+    <!-- Publish and options -->
+    <div class="info__container" id="cat__list">
+        
+    </div>
+
+    <script src="assets/scripts/index.js"></script>
+    <script src="assets/scripts/database.js"></script>   
+</div>
+
+</body>
+</html>
